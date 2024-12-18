@@ -1,3 +1,5 @@
+input ("Welcome to Rainbow Six Siege today we will be testing if you are a attacker or a defender press enter to continue")
+
 defense_points = 0
 attack_points = 0
 
@@ -30,3 +32,10 @@ if answer == "A":
     defense_points += 1
 elif answer == "B":
     attack_points += 1
+
+if defense_points > attack_points :
+    print("welcome to the defense")
+elif attack_points > defense_points :
+    print("welcome to the attack")
+elif defense_points == attack_points :
+    print("you are a one person army")
